@@ -1,16 +1,16 @@
 div.formflex{
-    height: 80vh;
     width: 100%;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-div.formcontainer{
+form.formcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     min-height: 250px;
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -56,12 +56,13 @@ input.approve:hover{
     color: #fff;
 }
 div.error{
+    display: none;
     font-size: .75rem;
     color: red;
     text-transform: uppercase;
 }
 @media (min-width:600px) and (max-width:900px){
-div.formcontainer {
+form.formcontainer {
     width: 400px;
 }
 div.title {
@@ -81,7 +82,7 @@ div.error {
 }
 }
 @media (min-width:900px){
-div.formcontainer {
+form.formcontainer {
     width: 600px;
 }
 div.title {
